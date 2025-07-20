@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the beauty and culture of Nigeria">
+    <title>Nigeria</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero-header">
+        <h1>Nigeria</h1>
+        <div class="hero-container">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/nigeria-large.webp">
+                <source media="(min-width: 600px)" srcset="images/nigeria-medium.webp">
+                <img src="images/nigeria-small.webp" alt="Aerial view of Lagos city skyline with the Atlantic Ocean" width="1600" height="900">
+            </picture>
+            
+            <div class="card facts-card">
+                <h2>Country Facts</h2>
+                <ul>
+                    <li><strong>Population:</strong> 223 million</li>
+                    <li><strong>Capital:</strong> Abuja</li>
+                    <li><strong>Languages:</strong> English (official), Hausa, Yoruba, Igbo</li>
+                    <li><strong>Currency:</strong> Naira (₦)</li>
+                </ul>
+            </div>
+            
+            <div class="card weather-card">
+                <h2>Weather</h2>
+                <div class="weather-content">
+                    <p>Current Temp: <span id="temp">32</span>°C</p>
+                    <p>Wind Speed: <span id="wind-speed">12</span> km/h</p>
+                    <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Ugochukwu A. Onunkwo | Nigeria | 
+        Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>

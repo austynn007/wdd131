@@ -1,0 +1,25 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero image responsive behavior */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional alternative using object-fit */
+/* .hero {
+  position: relative;
+  aspect-ratio: 2/1;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
