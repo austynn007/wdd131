@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Filtered Temples | LDS Temple Gallery</title>
+    <meta name="description" content="A filtered gallery of LDS temples with dynamic content loading">
+    <meta name="author" content="Ugochukwu A. Onunkwo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+    <!-- Preload critical images -->
+    <link rel="preload" href="images/rome-italy-temple.jpg" as="image">
+    <link rel="preload" href="images/san-diego-temple.jpg" as="image">
+    <link rel="preload" href="images/hong-kong-temple.jpg" as="image">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>LDS Temple Gallery</h1>
+        <button id="menu-button" aria-label="Toggle navigation">☰</button>
+        <nav id="main-nav" aria-label="Temple filter controls">
+            <ul>
+                <li><a href="#" class="active" data-filter="home">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="temples-container" class="grid">
+            <!-- Temple cards will be dynamically inserted by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> LDS Temple Gallery | Ugochukwu A. Onunkwo</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

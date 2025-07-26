@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Feature Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        caption {
+            caption-side: bottom;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        
+        thead {
+            background-color: #4a6fa5;
+            color: white;
+        }
+        
+        thead th:first-child {
+            background-color: #333;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tbody tr:hover {
+            background-color: #e6f7ff;
+        }
+        
+        tbody th {
+            text-align: left;
+            background-color: #f8f9fa;
+        }
+        
+        .check {
+            color: #28a745;
+        }
+        
+        .cross {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Table 1: Account Feature Comparison</caption>
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Basic</th>
+                <th scope="col">Premium</th>
+                <th scope="col">Deluxe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Feature 1</th>
+                <td class="check">✔️</td>
+                <td class="check">✔️</td>
+                <td class="check">✔️</td>
+            </tr>
+            <tr>
+                <th scope="row">Feature 2</th>
+                <td class="cross">❌</td>
+                <td class="check">✔️</td>
+                <td class="check">✔️</td>
+            </tr>
+            <tr>
+                <th scope="row">Feature 3</th>
+                <td class="cross">❌</td>
+                <td class="cross">❌</td>
+                <td class="check">✔️</td>
+            </tr>
+            <tr>
+                <th scope="row">Feature 4</th>
+                <td class="cross">❌</td>
+                <td class="cross">❌</td>
+                <td class="check">✔️</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
