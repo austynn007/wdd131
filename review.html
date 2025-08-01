@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You!</h1>
+    </header>
+
+    <main>
+        <p>Your review has been submitted successfully.</p>
+        <p>Total reviews submitted: <span id="reviewCounter">0</span></p>
+        <a href="form.html">Submit another review</a>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Product Reviews</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Review Counter
+        let count = localStorage.getItem("reviewCount") || 0;
+        count++;
+        localStorage.setItem("reviewCount", count);
+        document.getElementById("reviewCounter").textContent = count;
+
+        // Footer Date
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+    </script>
+</body>
+</html>
