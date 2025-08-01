@@ -1,0 +1,113 @@
+/* General Body and HTML Styling */
+body {
+    font-family: 'Open Sans', sans-serif; /* Applied to body */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #F5F5DC; /* Secondary Background Color */
+    color: #333; /* Default text color for contrast */
+}
+
+/* Headings Styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif; /* Applied to headings */
+    color: #228B22; /* Primary Accent Color */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    border-bottom: 2px solid #228B22;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-left: 5px solid #228B22;
+    padding-left: 10px;
+    margin-left: -15px; /* Adjust as needed for alignment */
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+/* Section Styling */
+section {
+    background-color: #ffffff; /* White background for sections for clarity */
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* List Styling */
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Color Schema Examples */
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.primary-accent {
+    background-color: #228B22;
+}
+
+.secondary-bg {
+    background-color: #F5F5DC;
+}
+
+/* Typography Examples */
+.font-example {
+    font-size: 1.1em;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ccc;
+}
+
+.roboto-slab-example {
+    font-family: 'Roboto Slab', serif;
+}
+
+.open-sans-example {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Wireframe Preformatted Text */
+pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px dashed #ccc;
+    overflow-x: auto; /* Enable horizontal scrolling for wide wireframes */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #666;
+}
